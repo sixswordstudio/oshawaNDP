@@ -14,8 +14,8 @@ const config = {
   baseUrl: '/',
 
   // If you host on GitHub Pages, set these; otherwise use your actual org/repo
-  // organizationName: 'oshawandp', // GitHub org/user
-  // projectName: 'website',        // Repo name
+  organizationName: 'sixswordstudio', // GitHub org/user
+  projectName: 'oshawaNDP',        // Repo name
 
   // Friendlier during setup
   onBrokenLinks: 'warn',
