@@ -36,11 +36,11 @@ const config = {
           routeBasePath: '/docs',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/oshawandp/website/tree/main/',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           feedOptions: { type: ['rss', 'atom'], xslt: true },
           editUrl: 'https://github.com/oshawandp/website/tree/main/',
           onInlineTags: 'warn',
@@ -67,7 +67,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Docs' },
+          { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Membership' },
           { to: '/blog', label: 'News', position: 'left' },
           { to: '/docs/events', label: 'Events', position: 'left' },
           { to: '/docs/volunteer', label: 'Volunteer', position: 'left' },
@@ -85,8 +85,8 @@ const config = {
       announcementBar: {
         id: 'sept-meeting',
         content:
-          'Oshawa NDP General Meeting: Sept 12, 7 pm at the community hall. <a href="/docs/events">Details</a>',
-        backgroundColor: '#f5f0e6',
+          'Next General Meeting: <a href="/docs/events">Details</a>',
+        backgroundColor: '#21d6ffff',
         textColor: '#000000',
         isCloseable: true,
       },
@@ -95,27 +95,27 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'About',
+            title: 'Information',
             items: [
-              { label: 'Who We Are', to: '/docs/intro' },
-              { label: 'Constitution', to: '/docs/constitution' },
-              { label: 'Contact', to: '/docs/contact' },
+              { label: 'About us', to: '/docs/intro' },
+              { label: 'Sign a Petition', to: '/docs/constitution' },
+              { label: 'News & Updates', to: '/docs/contact' },
             ],
           },
           {
             title: 'Get Involved',
             items: [
-              { label: 'Volunteer', to: '/docs/volunteer' },
-              { label: 'Membership', to: '/docs/membership' },
-              { label: 'Events', to: '/docs/events' },
+              { label: 'Make a donation', to: '/docs/volunteer' },
+              { label: 'Become a member', to: '/docs/membership' },
+              { label: 'Attend an event', to: '/docs/events' },
             ],
           },
           {
-            title: 'Follow',
+            title: 'Help & Contact',
             items: [
-              { label: 'Facebook', href: 'https://facebook.com/oshawandp' },
-              { label: 'Instagram', href: 'https://instagram.com/oshawandp' },
-              { label: 'Email', href: 'mailto:info@oshawandp.ca' },
+              // { label: 'Facebook', href: 'https://facebook.com/oshawandp' },
+              { label: 'Community Resources', href: 'https://instagram.com/oshawandp' }, //todo: update url to match real community resources page
+              { label: 'Email Us', href: 'mailto:info@oshawandp.ca', position: 'right' },
             ],
           },
         ],
