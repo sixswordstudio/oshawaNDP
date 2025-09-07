@@ -1,6 +1,6 @@
 yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
+  name: John Smith - Chairman
+  title: Placeholder, example of a featured contributor
   url: https://linkedin.com/in/yangshun
   image_url: https://github.com/yangshun.png
   page: true
@@ -11,8 +11,8 @@ yangshun:
     newsletter: https://www.greatfrontend.com
 
 slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
+  name: Jane Fonda - Treasurer
+  title: Placeholder, example of a featured contributor
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
   page:
@@ -23,3 +23,14 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+nameofperson:
+  name: Person McPerson
+  title: Lead Person @ Personcorp
+  url: https://linkedin.com/in/
+  image_url: https://github.com/
+  page: true
+  socials:
+    email: person@person.com
+
+

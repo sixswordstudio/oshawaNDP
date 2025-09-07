@@ -15,6 +15,31 @@
   --ifm-color-primary-lightest: #f9a874;
   --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
+
+
+/* Override primary button to be blue, keeping global palette orange */
+.button.button--primary {
+  background-color: #21d6ffff; /* Blue button */
+  border-color: #21d6ffff;
+  color: #000000;
+}
+
+.button.button--primary:hover {
+  background-color: #21d6ffff;
+  border-color: #21d6ffff;
+}
+
+/* Navbar link color adjustments */
+.navbar__link {
+  color: var(--ifm-color-primary) !important;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #ffffff !important;
+}
+
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #f37021;   /* NDP-ish orange */

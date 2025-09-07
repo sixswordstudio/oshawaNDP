@@ -13,15 +13,22 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Your voice matters.
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">Join the Oshawa NDP today</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--primary button--lg"
+            to="https://act.ndp.ca/donate/membership-en">
+            Join Now
+          </Link>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/membership">
-            Become a Member Today
+            Learn More
           </Link>
+        </div>
         </div>
       </div>
     </header>

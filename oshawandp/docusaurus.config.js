@@ -35,14 +35,12 @@ const config = {
           path: 'docs',
           routeBasePath: '/docs',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/oshawandp/website/tree/main/',
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
         },
         blog: {
           showReadingTime: false,
           feedOptions: { type: ['rss', 'atom'], xslt: true },
-          editUrl: 'https://github.com/oshawandp/website/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -70,20 +68,20 @@ const config = {
           { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Membership' },
           { to: '/blog', label: 'News', position: 'left' },
           { to: '/docs/events', label: 'Events', position: 'left' },
-          { to: '/docs/volunteer', label: 'Volunteer', position: 'left' },
-          { href: 'https://github.com/oshawandp/website', label: 'GitHub', position: 'right' },
+          { to: '/docs/volunteer', label: 'Volunteer', position: 'right' },
+          { to: '/docs/donate', label: 'Donate', position: 'right' },
         ],
       },
 
       colorMode: {
-        defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
 
       // Handy for urgent notices (fundraisers, meetings)
       announcementBar: {
-        id: 'sept-meeting',
+        id: 'next-meeting',
         content:
           'Next General Meeting: <a href="/docs/events">Details</a>',
         backgroundColor: '#21d6ffff',
@@ -119,7 +117,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} Oshawa NDP Riding Association.`,
+        copyright: `© ${new Date().getFullYear()} The Oshawa NDP Association.`,
       },
 
       prism: {

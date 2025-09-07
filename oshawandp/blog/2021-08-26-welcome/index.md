@@ -2,12 +2,10 @@
 slug: welcome
 title: Welcome
 authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+tags: [healthcare, housing, oshawa, ndp]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
-
-Here are a few tips you might find useful.
+This is the pinned homepage of all our featured RSS feeds and blog posts (or, self-published articles). We would ideally put a call to action and broad statement that doesn't fade out of relevance very often here. Imagine whose profiles we may want to feature here (IF ANY). I can remove that if it invites chaos. Anyways, this is what the homepage of the News section is all about. 
 
 <!-- truncate -->
 

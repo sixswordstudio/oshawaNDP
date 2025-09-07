@@ -4,27 +4,27 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Powered by Oshawa',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Attend local events at Memorial and Ed Broadbent Park, meet your progressive neighbours, and volunteer for the local executive committee!
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Fighting for Ontario',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        “With courage and compassion, we can lift each other up, and keep each other up there.”
+        <br></br>
+        – Marit Stiles
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Standing for Canada',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
