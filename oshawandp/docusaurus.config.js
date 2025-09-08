@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Oshawa NDP',
   tagline: 'Oshawa NDP Riding Association',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/NDP_Orange_2.png',
 
   future: { v4: true },
 
@@ -62,7 +62,7 @@ const config = {
         title: 'Oshawa NDP',
         logo: {
           alt: 'Oshawa NDP',
-          src: 'img/logo.svg',
+          src: 'img/NDP_Orange.png',
         },
         items: [
           { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Membership' },
@@ -74,8 +74,8 @@ const config = {
       },
 
       colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: true,
+        defaultMode: 'light',
+        disableSwitch: false,
         respectPrefersColorScheme: false,
       },
 
@@ -84,13 +84,13 @@ const config = {
         id: 'next-meeting',
         content:
           'Next General Meeting: <a href="/docs/events">Details</a>',
-        backgroundColor: '#21d6ffff',
+        backgroundColor: '#00A0DC',
         textColor: '#000000',
         isCloseable: true,
       },
 
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Information',

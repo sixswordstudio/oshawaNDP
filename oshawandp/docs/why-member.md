@@ -15,11 +15,17 @@ Membership provides opportunities to actively make a difference:
 
     * → Enhance your skills: training and development sessions created to support volunteers;
 
-    * → Engage in purposeful action through events and meetings. 
+    * → Engage in purposeful action through events and meetings.
 
-# How do I join?
+    * → Money back at tax time: get a return on yearly membership and any donations 
+
+## How do I join?
 
     * Some steps
     * It's easy
 
-# 
+## Who can I talk to about x y z?
+
+Here is some information about contacting us.
+
+##  

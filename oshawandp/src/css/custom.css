@@ -1,53 +1,196 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global CSS for Docusaurus site
+ * Infima variables + a few targeted overrides
  */
 
-/* You can override the default Infima variables here. */
+/* 1) Load fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 2) Base theme variables */
 :root {
-  --ifm-color-primary: #f37021;   /* NDP-ish orange */
+  /* Typography */
+  --ifm-font-family-base: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  --font-heading: var(--ifm-heading-font-family);
+  --font-body: var(--ifm-font-family-base);
+  --ifm-heading-font-family: 'Roboto', Georgia, 'Times New Roman', serif;
+
+  /* Palette (NDP style) */
+  --ifm-color-primary: #F58220;
   --ifm-color-primary-dark: #d9601c;
   --ifm-color-primary-darker: #c85719;
   --ifm-color-primary-darkest: #a34815;
   --ifm-color-primary-light: #f5843e;
   --ifm-color-primary-lighter: #f79459;
   --ifm-color-primary-lightest: #f9a874;
-  --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-
-/* Override primary button to be blue, keeping global palette orange */
-.button.button--primary {
-  background-color: #21d6ffff; /* Blue button */
-  border-color: #21d6ffff;
-  color: #000000;
+/* 3) Global typography */
+body, p, li {
+  font-family: 'Roboto';
 }
 
-.button.button--primary:hover {
-  background-color: #21d6ffff;
-  border-color: #21d6ffff;
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Serif Pro";
 }
 
-/* Navbar link color adjustments */
+/* 4) Body text */
+body, p, li {
+  font-family: var(--font-heading);
+}
+
+/* Force correct fonts in docs pages */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: 'Source Serif Pro', Georgia, serif !important; /* headings = serif */
+}
+
+.markdown p,
+.markdown li {
+  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif !important; /* body = sans */
+}
+
+/* Force sidebar/menu links to use body font (Roboto) */
+.menu__link {
+  font-family: var(--font-body);
+}
+
+/* 5) Navbar title/logo in serif (if that’s what you want) */
+.navbar__title, .navbar__logo {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+/* 6) Navbar link colors: default orange → hover NDP blue */
 .navbar__link {
-  color: var(--ifm-color-primary) !important;
+  color: var(--ifm-color-primary);
+  font-family: var(--font-body);
 }
-
 .navbar__link:hover,
 .navbar__link--active {
-  color: #ffffff !important;
+  color: #00A0DC;
 }
 
+/* 7) Primary button: blue background, white text, visible hover/focus */
+/* 5) Primary button */
+.button.button--primary { background-color: #00A0DC; border-color: #ffffff; color: #ffffff; font-family: 'Roboto'; }
+.button.button--primary:hover { filter: brightness(0.92); }
+.button.button--primary:focus-visible { outline: 3px solid #ffffff; outline-offset: 2px; }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+.button.button--secondary { background-color: #ffffff; border-color: #00A0DC; color: #00A0DC; font-family: 'Roboto'; }
+
+/* 8) Dark mode tweaks: keep orange palette; fonts already cascade */
 [data-theme='dark'] {
-  --ifm-color-primary: #f37021;   /* NDP-ish orange */
+  --ifm-color-primary: #F58220;
   --ifm-color-primary-dark: #d9601c;
   --ifm-color-primary-darker: #c85719;
   --ifm-color-primary-darkest: #a34815;
   --ifm-color-primary-light: #f5843e;
   --ifm-color-primary-lighter: #f79459;
   --ifm-color-primary-lightest: #f9a874;
-  --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Contact row styles */
+/* Geometric effect on blue row */
+.bg--ndp-black {
+  background: #00A0DC; /* lighter blue sides */
+  color: #000000;
+  position: relative;   /* needed for the overlay */
+  overflow: hidden;     /* crop the skewed pseudo-element */
+}
+
+.bg--ndp-black::before {
+  content: "";
+  position: absolute;
+  inset: 0;            /* full cover */
+  left: 5%;           /* width/position of the center band */
+  width: 25%;
+  background: #00A0DC; /* darker center */
+  transform: skewX(180deg);
+  z-index: 0;
+}
+.bg--ndp-black > * {
+  position: relative;
+  z-index: 1;          /* ensure text/icons sit above overlay */
+}
+
+.contact-list { list-style: none; padding-left: 0; margin: 0; }
+.contact-item { display: flex; align-items: baseline; gap: .5rem; margin: .35rem 0; }
+.contact-icon { width: 1.1rem; display: inline-flex; justify-content: center; }
+.bg--ndp-black a { color: #000000; justify-content: center; }
+.bg--ndp-black a:hover { color: #F58220; }
+
+/* Brand utility backgrounds */
+.bg--ndp-blue { background: #00A0DC; color: #fff; }
+.bg--ndp-orange { background: var(--ifm-color-primary); color: #fff; }
+
+/* Inline social icons */
+.list--inline { padding-left: 0; list-style: none; }
+.list--inline > li { display: inline-block; }
+
+/* Donation buttons full-width */
+.button--block { display: block; width: 100%; }
+
+.donation-col {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* Big text box*/
+.text-block-row {
+  background: #ffffff;
+}
+[data-theme='dark'] .text-block-row {
+  background: #111;
+}
+.text-block-row h2 {
+  font-weight: 700;
+  font-family: 'Roboto';
+  
+}
+.text-block-row p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Roboto';
+}
+
+:root {
+  --font-heading: "Source Serif Pro", Georgia, serif;
+  --font-body: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
+
+/* General heading defaults */
+h1, h2, h3, .section-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  letter-spacing: -0.015em;  /* tighten serif */
+}
+
+/* Donation band (orange) titles */
+.donation-section h2,
+.donation-band h2,
+.donation-grid h2,         /* whichever wrapper you’re actually using */
+.section-title--donation {
+  font-size: clamp(1.9rem, 1.2rem + 2vw, 2.4rem);
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 1rem 0;
+}
+
+/* Contact row column titles */
+.bg--ndp-black h3,         /* your contact row uses this class for the blue band */
+
+.contact-row h3 {
+  padding: 0.1rem 0;   /* add top/bottom padding */
+  font-size: 1.75rem;
+  font-family: 'Roboto';
+  line-height: 1.25;
+  color: #fff;
+  margin: 0 0 .75rem 0;
 }

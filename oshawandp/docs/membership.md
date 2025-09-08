@@ -2,12 +2,13 @@
 sidebar_position: 1
 ---
 
-# Welcome to the Oshawa NDP 🍊
+# 🍊 Why be a member
 
-For more than sixty years, Oshawa’s New Democrats have stood proudly at the heart of Canada’s progressive movement. We are activists, workers, artists - neighbours brought together by a deep belief in a better world founded on labour solidarity, strong public services, and environmental justice. For generations, we have joined together to fight for a fair and equitable future.
+Now is a great time to become a member of the NDP!  Your voice in Oshawa matters, and by joining the NDP you will also be joining like-minded, progressive community members, your neighbours, in helping build a stronger Oshawa, a stronger Ontario, and a stronger Canada. 
 
-Our city was home to former NDP Leader Ed Broadbent, a tireless champion for human rights whose legacy continues to inspire us today. After some challenging elections, the Oshawa New Democrats have been proud to carry forward that tradition with four consecutive winning campaigns for MPP Jennifer French, whose leadership continues to reflect the community’s values of strength, compassion, and fairness.
+Life is challenging, and connecting with others has never been more important. The NDP continues to put people first with every decision: fighting for fair wages, better benefits, safer working conditions, stronger schools, housing you can afford, and building and protecting public healthcare for all. 
 
-But the Oshawa New Democrats are more than a campaign team—we are a community. Together we work hard, support one another, and find common purpose in our progressive values at a time when the world can feel uncertain. We welcome everyone, and we make sure diverse voices are not only heard but valued. As part of Canada’s only truly democratic political party, every member has a vote to help shape our future, from electing leaders to debating policies at provincial and federal conventions.
+The NDP believe a more fair, just, and equitable Canada is possible. Through your membership with the NDP, you will help grow the local team in Oshawa, and help guide the direction and policies of the party.
 
-Here in Oshawa, we carry forward a proud history of progressive leadership while building a more just and equitable tomorrow. We hope you’ll join us. 
+“With courage and compassion, we can lift each other up, and keep each other up there.” 
+        – Marit Stiles

@@ -4,11 +4,31 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: #f1770d; /* lighter blue sides */
+  color: #000000;
+  position: relative;   /* needed for the overlay */
+  overflow: hidden;     /* crop the skewed pseudo-element */
 }
+
+.heroBanner::before {
+  content: "";
+  position: absolute;
+  inset: 0;            /* full cover */
+  left: 25%;           /* width/position of the center band */
+  width: 50%;
+  background: #F58220; /* darker center */
+  transform: skewX(-12deg);
+  z-index: 0;
+}
+.heroBanner > * {
+  position: relative;
+  z-index: 1;          /* ensure text/icons sit above overlay */
+}
+
 
 @media screen and (max-width: 996px) {
   .heroBanner {
