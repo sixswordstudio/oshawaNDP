@@ -68,7 +68,7 @@ const config = {
           { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Membership' },
           { to: '/blog', label: 'News', position: 'left' },
           { to: '/docs/events', label: 'Events', position: 'left' },
-          { to: '/docs/volunteer', label: 'Volunteer', position: 'right' },
+          // { to: '/docs/volunteer', label: 'Volunteer', position: 'right' },
           { to: '/docs/donate', label: 'Donate', position: 'right' },
         ],
       },
@@ -91,32 +91,32 @@ const config = {
 
       footer: {
         style: 'light',
-        links: [
-          {
-            title: 'Information',
-            items: [
-              { label: 'About us', to: '/docs/intro' },
-              { label: 'Sign a Petition', to: '/docs/constitution' },
-              { label: 'News & Updates', to: '/docs/contact' },
-            ],
-          },
-          {
-            title: 'Get Involved',
-            items: [
-              { label: 'Make a donation', to: '/docs/volunteer' },
-              { label: 'Become a member', to: '/docs/membership' },
-              { label: 'Attend an event', to: '/docs/events' },
-            ],
-          },
-          {
-            title: 'Help & Contact',
-            items: [
-              // { label: 'Facebook', href: 'https://facebook.com/oshawandp' },
-              { label: 'Community Resources', href: 'https://instagram.com/oshawandp' }, //todo: update url to match real community resources page
-              { label: 'Email Us', href: 'mailto:info@oshawandp.ca', position: 'right' },
-            ],
-          },
-        ],
+        // links: [
+        //   {
+        //     title: 'Information',
+        //     items: [
+        //       { label: 'Become a member', to: '/docs/membership' },              
+        //       // { label: 'About us', to: '/docs/intro' },
+        //       // { label: 'Sign a Petition', to: '/docs/constitution' },
+        //       // { label: 'News & Updates', to: '/docs/contact' },
+        //     ],
+        //   },
+        //   {
+        //     // title: 'Get Involved',
+        //     items: [
+        //       // { label: 'Make a donation', to: '/docs/volunteer' },
+        //       // { label: 'Attend an event', to: '/docs/events' },
+        //     ],
+        //   },
+        //   {
+        //     // title: 'Help & Contact',
+        //     //items: [
+        //       // { label: 'Facebook', href: 'https://facebook.com/oshawandp' },
+        //       //{ label: 'Community Resources', href: 'https://instagram.com/oshawandp' }, //todo: update url to match real community resources page
+        //       //{ label: 'Email Us', href: 'mailto:info@oshawandp.ca', position: 'right' },
+        //     // ],
+        //   },
+        // ],
         copyright: `© ${new Date().getFullYear()} The Oshawa NDP Association.`,
       },
 

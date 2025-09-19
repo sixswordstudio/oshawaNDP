@@ -8,7 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: #f1770d; /* lighter blue sides */
+  background: #FA6400; /* lighter blue sides */
   color: #000000;
   position: relative;   /* needed for the overlay */
   overflow: hidden;     /* crop the skewed pseudo-element */

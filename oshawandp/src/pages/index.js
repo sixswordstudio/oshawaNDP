@@ -37,38 +37,38 @@ const JackLanding = {
       </p>
     </>
   ),
-  image: '/img/oshawa.png',          // put your image at static/img/oshawa.png
-  imageAlt: 'Placeholder image of Oshawa',
+  image: '/img/IMG_3469.JPG',          // put your image at static/img/oshawa.png
+  imageAlt: 'Image',
 };
 
 
 
-const ContactColumns = [
-  {
-    title: 'Riding Association',
-    items: [
-      { icon: '✉️', text: 'info@oshawandp.ca', href: 'mailto:info@oshawandp.ca' },
-      { icon: '📞', text: '647-000-0000', href: 'tel:+16470000000' },
-      { icon: '📍', text: '65 Shuter St, Box 81, Toronto, ON M5B 1B2' },
-    ],
-  },
-  {
-    title: 'Ontario NDP',
-    items: [
-      { icon: '✉️', text: 'info@ontariondp.ca', href: 'mailto:info@ontariondp.ca' },
-      { icon: '📞', text: '1-866-390-6637', href: 'tel:+18663906637' },
-      { icon: '📍', text: '201-2069 Lakeshore Blvd W, Toronto, ON, M8V 3Z4' },
-    ],
-  },
-  {
-    title: "Canada's NDP",
-    items: [
-      { icon: '✉️', text: 'contact@ndp.ca', href: 'mailto:contact@ndp.ca' },
-      { icon: '📞', text: '1-866-525-2555', href: 'tel:+18665252555' },
-      { icon: '📍', text: '300-279 Laurier W, Ottawa, ON K1P 5J9' },
-    ],
-  },
-];
+// const ContactColumns = [
+//   {
+//     title: 'Riding Association',
+//     items: [
+//       { icon: '✉️', text: '', href: '' },
+//       { icon: '📞', text: '647-000-0000', href: 'tel:+16470000000' },
+//       { icon: '📍', text: '65 Shuter St, Box 81, Toronto, ON M5B 1B2' },
+//     ],
+//   },
+//   {
+//     title: 'Ontario NDP',
+//     items: [
+//       { icon: '✉️', text: 'info@ontariondp.ca', href: 'mailto:info@ontariondp.ca' },
+//       { icon: '📞', text: '1-866-390-6637', href: 'tel:+18663906637' },
+//       { icon: '📍', text: '201-2069 Lakeshore Blvd W, Toronto, ON, M8V 3Z4' },
+//     ],
+//   },
+//   {
+//     title: "Canada's NDP",
+//     items: [
+//       { icon: '✉️', text: 'contact@ndp.ca', href: 'mailto:contact@ndp.ca' },
+//       { icon: '📞', text: '1-866-525-2555', href: 'tel:+18665252555' },
+//       { icon: '📍', text: '300-279 Laurier W, Ottawa, ON K1P 5J9' },
+//     ],
+//   },
+// ];
 
 const DONATE_BASE_PROV = 'https://act.ontariondp.ca/donate/OSH';
 const DONATE_BASE_FED = 'https://act.ndp.ca/donate/donate?source=20211018_WEB_GEN_1_DONATE_NDPWS_NDP_EN_ALL';
@@ -123,33 +123,33 @@ function DonationGrid({ left, right }) {
   );
 }
 
-function ContactRow({ columns = [] }) {
-  return (
-    <section className="bg--ndp-black padding-vert--lg" aria-label="Contact information">
-      <div className="container">
-        <div className="row">
-          {columns.map((col, i) => (
-            <div key={i} className="col col--4">
-              <h3 className="margin-bottom--md">{col.title}</h3>
-              <ul className="contact-list">
-                {col.items.map((it, j) => (
-                  <li key={j} className="contact-item">
-                    <span className="contact-icon" aria-hidden>{it.icon}</span>
-                    {it.href ? (
-                      <a href={it.href}>{it.text}</a>
-                    ) : (
-                      <span>{it.text}</span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+// function ContactRow({ columns = [] }) {
+//   return (
+//     <section className="bg--ndp-black padding-vert--lg" aria-label="Contact information">
+//       <div className="container">
+//         <div className="row">
+//           {columns.map((col, i) => (
+//             <div key={i} className="col col--4">
+//               <h3 className="margin-bottom--md">{col.title}</h3>
+//               <ul className="contact-list">
+//                 {col.items.map((it, j) => (
+//                   <li key={j} className="contact-item">
+//                     <span className="contact-icon" aria-hidden>{it.icon}</span>
+//                     {it.href ? (
+//                       <a href={it.href}>{it.text}</a>
+//                     ) : (
+//                       <span>{it.text}</span>
+//                     )}
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -208,13 +208,13 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="The Oshawa NDP Association ">
+      description="The Oshawa NDP Association">
       <HomepageHeader />
       <main>
         <TextBlockRow data={JackLanding} />
         <DonationGrid left={ProvincialDonations} right={FederalDonations} />
-        <ContactRow columns={ContactColumns} />
       </main>
     </Layout>
+    // Add back once address info corrected: <ContactRow columns={ContactColumns} />
   );
 }
