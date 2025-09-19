@@ -66,8 +66,8 @@ const config = {
         },
         items: [
           { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Membership' },
-          { to: '/blog', label: 'News', position: 'left' },
-          { to: '/docs/events', label: 'Events', position: 'left' },
+          // { to: '/blog', label: 'News', position: 'left' },
+          // { to: '/docs/events', label: 'Events', position: 'left' },
           // { to: '/docs/volunteer', label: 'Volunteer', position: 'right' },
           { to: '/docs/donate', label: 'Donate', position: 'right' },
         ],

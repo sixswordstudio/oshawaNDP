@@ -38,7 +38,7 @@ const JackLanding = {
     </>
   ),
   image: '/img/IMG_3469.JPG',          // put your image at static/img/oshawa.png
-  imageAlt: 'Image',
+  imageAlt: 'Oshawa NDP - Local Politics',
 };
 
 

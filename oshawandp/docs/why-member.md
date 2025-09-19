@@ -2,11 +2,19 @@
 sidebar_position: 2
 ---
 
-# Membership FAQ
+# Membership & Donation FAQ
+
+## How to become a member?
+1. Follow [this link](https://act.ontariondp.ca/donate/membership) to the official Ontario NDP donation page.
+2. Make a donation of $25 or more
+3. You are now a member!
+
+Together we will achieve our vision of a strong Ontario!
+
 
 ## What are the benefits of becoming a member?
-Membership provides opportunities to actively make a difference:
-
+Membership makes a difference:
+    
     * Have a voice in shaping the party: vote on candidates, and participate in critical policy decisions;
 
     * Take on meaningful roles within the party: volunteer to serve on the local executive;

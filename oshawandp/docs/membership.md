@@ -12,3 +12,10 @@ The NDP believe a more fair, just, and equitable Canada is possible. Through you
 
 “With courage and compassion, we can lift each other up, and keep each other up there.” 
         – Marit Stiles
+
+## To Join:
+1. Follow [this link](https://act.ontariondp.ca/donate/membership) to the official **Ontario NDP** donation page.
+2. Make a donation of $25 or more
+3. You are now a member!
+
+_Remember, you get a return on donations at tax time!_
