@@ -11,7 +11,7 @@ const config = {
 
   // Your live domain and base path
   url: 'https://oshawandp.ca',
-  baseUrl: '/oshawaNDP/',
+  baseUrl: '/',
 
   // If you host on GitHub Pages, set these; otherwise use your actual org/repo
   organizationName: 'sixswordstudio', // GitHub org/user
